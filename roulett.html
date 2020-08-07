@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="casino.css">
+        <title>Jeu_De_Roulette</title>
+    </head>
+
+    <body>
+        <div class="maine">
+            <ul class="menue">
+               
+                <li class="list" id="stat"><a href="roulette.html">ACCEUIL</a></li>
+            </ul>
+        </div>
+        <div id="tableDeJeu">
+            <div style="float: left; margin-top: 20px; margin-left: 120px; margin-right: 30px; opacity: inherit;">
+                <img id="roue" src="./roulette.png" onclick="tourne()">
+            </div>
+
+            <div id="tableauValeur" style="float: left; margin-top: 10px;">
+                <div>
+                    <div class="noire" onclick="clickValeur(3)">3</div>
+                    <div class="rouge" onclick="clickValeur(6)">6</div>
+                    <div class="noire" onclick="clickValeur(9)">9</div>
+                    <div class="rouge" onclick="clickValeur(12)">12</div>
+                    <div class="noire" onclick="clickValeur(15)">15</div>
+                    <div class="rouge" onclick="clickValeur(18)">18</div>
+                    <div class="noire" onclick="clickValeur(21)">21</div>
+                    <div class="rouge" onclick="clickValeur(24)">24</div>
+                    <div class="noire" onclick="clickValeur(27)">27</div>
+                    <div class="rouge" onclick="clickValeur(30)">30</div>
+                    <div class="noire" onclick="clickValeur(33)">33</div>
+                    <div class="rouge" onclick="clickValeur(36)">36</div>
+                </div>
+
+                <div style="clear: left;">
+                    <div class="rouge" onclick="clickValeur(2)">2</div>
+                    <div class="noire" onclick="clickValeur(5)">5</div>
+                    <div class="rouge" onclick="clickValeur(8)">8</div>
+                    <div class="noire" onclick="clickValeur(11)">11</div>
+                    <div class="rouge" onclick="clickValeur(14)">14</div>
+                    <div class="noire" onclick="clickValeur(17)">17</div>
+                    <div class="rouge" onclick="clickValeur(20)">20</div>
+                    <div class="noire" onclick="clickValeur(23)">23</div>
+                    <div class="rouge" onclick="clickValeur(26)">26</div>
+                    <div class="noire" onclick="clickValeur(29)">29</div>
+                    <div class="rouge" onclick="clickValeur(32)">32</div>
+                    <div class="noire" onclick="clickValeur(35)">35</div>
+                </div>
+
+                <div style="clear: left;">
+                    <div class="noire" onclick="clickValeur(1)">1</div>
+                    <div class="rouge" onclick="clickValeur(4)">4</div>
+                    <div class="noire" onclick="clickValeur(7)">7</div>
+                    <div class="rouge" onclick="clickValeur(10)">10</div>
+                    <div class="noire" onclick="clickValeur(13)">13</div>
+                    <div class="rouge" onclick="clickValeur(16)">16</div>
+                    <div class="noire" onclick="clickValeur(19)">19</div>
+                    <div class="rouge" onclick="clickValeur(22)">22</div>
+                    <div class="noire" onclick="clickValeur(25)">25</div>
+                    <div class="rouge" onclick="clickValeur(28)">28</div>
+                    <div class="noire" onclick="clickValeur(31)">31</div>
+                    <div class="rouge" onclick="clickValeur(34)">34</div>
+                </div>
+
+                <div style="clear: left;">
+                    <div class="rougePaire" onclick="clickValeur(37)">PAIR</div>
+                    <div class="noirePaire" onclick="clickValeur(38)">IMPAIR</div>
+                </div>
+                <div>
+                    <span id="rou">Votre portfeuil :</span>
+                </div>
+
+                <div style="clear: left;">
+                    <div class="champPorteJ"><span id="joueur">100000</span> FCFA</div>
+                    <div class="champPorteO" ><span id="ordi">0</span> FCFA</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: left; margin: auto; width: 500px; height: 280px;">
+            <p>Veuillez choisir un chiffre pour le pari</p>
+            <select id="choix">
+                <option value="choisir un chiffre" selected>Choisir un chiffre</option>
+                <option value="37">Pair</option>
+                <option value="38">Impair</option>            
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+            </select>
+
+            <p>Veuillez entrez le montant à miser</p>
+            <input id="number" type="text" placeholder="Entrer le montant" required></br>
+
+            <input id="jouer" type="button" value="GO" onclick="jeuDeRoulette()"> 
+        </div>
+
+        <input id="reset" type="button" value="Effacerr" onclick="resetMoney()">
+
+        <script type="text/javascript" src="casino.js"></script>
+    </body>
+</html>

@@ -1,0 +1,267 @@
+body{
+    background-color: darkgray;
+    margin: 0px;
+    background-image: url(./sc_roulette_2018_0002.jpg.jpeg);
+}
+
+p{
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 450px;
+    height: 30px;
+    border: 0px solid blue;
+    border-radius: 100px;
+    
+}
+
+#tableDeJeu{
+    margin: auto;
+    width: 800px; 
+    height: 350px; 
+    
+    border-radius: 5px; 
+    background-color:black; 
+     
+    margin-bottom: 20px;
+}
+
+#choix, #number{
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    border: 0px solid black;
+}
+
+#choix:hover, #number:hover{
+    box-shadow: 0px 0px 50px rgb(236, 194, 55);
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    border: 0px solid black;
+}
+
+.rougePaire{
+    padding-top: 10px;
+    text-align: center;
+    background-color: red; 
+    color: white;  
+    height: 40px; 
+    border: 1px solid white;
+}
+
+.rougePaire:hover{
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(248, 84, 55); 
+    color: white;  
+    height: 40px; 
+    border: 1px solid white;
+}
+
+.noirePaire{
+    padding-top: 10px;
+    text-align: center;
+    background-color: black; 
+    color: white; 
+    height: 40px;
+    border: 1px solid white;
+}
+
+.noirePaire:hover{
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(61, 59, 59); 
+    color: white; 
+    height: 40px;
+    border: 1px solid white;
+}
+
+.rouge{
+    padding-top: 10px;
+    text-align: center;
+    background-color: red; 
+    color: white; 
+    width: 30px; 
+    height: 40px; 
+    float: left; 
+    border: 1px solid white;
+}
+
+.rouge:hover{
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(248, 84, 55); 
+    color: white; 
+    width: 30px; 
+    height: 40px; 
+    float: left; 
+    border: 1px solid white;
+}
+
+.noire{
+    padding-top: 10px;
+    text-align: center;
+    background-color: black; 
+    color: white; 
+    width: 30px; 
+    height: 40px; float: left; 
+    border: 1px solid white;
+}
+
+.noire:hover{
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(61, 59, 59); 
+    color: white; 
+    width: 30px; 
+    height: 40px; float: left; 
+    border: 1px solid white;
+}
+
+.champPorteJ{
+    text-align: center;
+    padding-top: 6px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    background-color: darkgrey;
+    width: 150px;
+    height: 30px;
+    border: 5px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.champPorteO{
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    background-color: darkgrey;
+    width: 150px;
+    height: 30px;
+    border: 5px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+#jouer{
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+    border: 0px solid ;
+    border-radius: 100px;
+    width: 120px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+
+#jouer:active{
+    background-color: rgb(119, 91, 38);
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+    border: 0px solid black;
+    border-radius: 100px;
+    width: 120px;
+    height: 25px;
+    
+    margin-top: 2px;
+}
+
+
+#reset{
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+    border:none;
+    border-radius: 100px;
+    width: 120px;
+    height: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+        
+}
+
+#reset:active{
+    color: white;
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+    border: none;
+    
+    width: 120px;
+    height: 25px;
+    
+    margin-top: 2px;
+    
+}
+
+#pregle:hover{
+    margin-left: 10%; 
+    margin-top: 10px; 
+    box-shadow: 0px 0px 20px white; 
+    border-radius: 20px;
+}
+.maine{
+    color: black;
+    background-color: #0004;
+    width: 100%;
+}
+.menue{
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.maine ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left:140px;
+}
+.maine .menue .list{
+    display: inline-block;
+    position: relative;
+    transition: 0.7s all;
+}
+.maine .menue .list a{
+    color: white;
+    display: block;
+    padding: 12px 24px;    
+    text-decoration: none;
+}
+.list:hover{
+    background-color:#232527;
+    transform: scale(1.3);    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.993);    
+}
+#stat a{
+    background-color: #000;
+}
+#stat a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+#rou{
+    text-align: center;
+    color: white;
+    top: 12px;
+}
